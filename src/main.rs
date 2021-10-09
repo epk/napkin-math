@@ -313,7 +313,7 @@ fn main() {
         )
         .get_matches();
 
-    let methods: [(&'static str, fn()); 21] = [
+    let methods: [(&'static str, fn()); 19] = [
         ("memory_read_sequential", memory_read_sequential),
         ("memory_write_sequential", memory_write_sequential),
         ("memory_read_random", memory_read_random),
@@ -335,8 +335,8 @@ fn main() {
         ("disk_write_sequential_fsync", disk_write_sequential_fsync),
         ("tcp_read_write", tcp_read_write),
         // ("simd", simd),
-        ("redis_read_single_key", redis_read_single_key),
-        ("mysql_write", mysql_write),
+        // ("redis_read_single_key", redis_read_single_key),
+        // ("mysql_write", mysql_write),
         ("sort", sort),
         ("mutex", mutex),
         ("hash_sha256", hash_sha256),
